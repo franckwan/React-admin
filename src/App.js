@@ -27,6 +27,7 @@ class App extends Component {
     render() {
         console.log(this.props.auth);
         const { auth, router } = this.props;
+        debugger
         return (
             <Layout className="ant-layout-has-sider">
               <SiderCustom path={this.props.location.pathname} collapsed={this.state.collapsed} />

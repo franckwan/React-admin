@@ -130,7 +130,17 @@ class SiderCustom extends Component {
                         <Menu.Item key="/app/auth/basic"><Link to={'/app/auth/basic'}>基础演示</Link></Menu.Item>
                         <Menu.Item key="/app/auth/routerEnter"><Link to={'/app/auth/routerEnter'}>路由拦截</Link></Menu.Item>
                     </SubMenu>
+                    <SubMenu
+                        key="/app/OA"
+                        title={<span><Icon type="bulb" /><span className="nav-text">OA管理</span></span>}
+                    >
+                        <Menu.Item key="/app/OA/OAbasic"><Link to={'/app/OA/OAbasic'}>OA基础演示</Link></Menu.Item>
+                        <Menu.Item key="/app/OA/OArouterEnter"><Link to={'/app/OA/OArouterEnter'}>OA路由拦截</Link></Menu.Item>
+                        <Menu.Item key="/app/OA/AddTabPanel"><Link to={'/app/OA/AddTabPanel'}>Tab页面</Link></Menu.Item>
+                    </SubMenu>
                 </Menu>
+
+
                 <style>
                     {`
                     #nprogress .spinner{
